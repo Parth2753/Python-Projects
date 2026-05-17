@@ -1,7 +1,9 @@
 print("############################################################")
 print("                    MORSE CODE CONVERTER                   ")
 print("############################################################")
-sentence = str(input("Enter a word: "))
+
+sentence = input("Enter a word: ").upper()
+
 morse = {
     'A': '.-',
     'B': '-...',
@@ -28,8 +30,14 @@ morse = {
     'W': '.--',
     'X': '-..-',
     'Y': '-.--',
-    'Z': '--..'
+    'Z': '--..',
+    ' ': '/'
 }
+
+morset = ""
+
 for letter in sentence:
     if letter in morse:
-        print(f"Your morse coded word {sentence} is: ",morse[letter],end = '')
+        morset += morse[letter] + " "
+
+print(f"Your morse coded sentence is: {morset}")
