@@ -1,5 +1,5 @@
 print("############################################################")
-print("                    MORSE CODE GENERATOR                   ")
+print("                    MORSE CODE CONVERTER                 ")
 print("############################################################")
 sentence = str(input("Enter a word: "))
 morse = {
