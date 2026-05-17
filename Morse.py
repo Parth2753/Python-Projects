@@ -34,10 +34,10 @@ morse = {
     ' ': '/'
 }
 
-morset = ""
+output = ""
 
 for letter in sentence:
     if letter in morse:
-        morset += morse[letter] + " "
+        output += morse[letter] + " "
 
-print(f"Your morse coded sentence is: {morset}")
+print(f"Your morse coded sentence {sentence} is:",output)
